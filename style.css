@@ -29,7 +29,6 @@ body{
 
 #intro-text{
   width: 50%;
-  float: left;
   padding:4em 4em;
 }
 
@@ -46,10 +45,11 @@ body{
   background: transparent\9;
   background:rgba(0,0,0,0.4);
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
+  float: left;
   zoom: 1;
   width: 40%;
-  float: left;
   margin:2em 3em;
+  
 }
 .form-text{
   font-size: 15px;
@@ -110,7 +110,6 @@ font-weight: bolder;
 }
 .client{
   margin: auto;
-  
   width: 30%;
 }
 .client img{
@@ -135,11 +134,11 @@ font-weight: bolder;
   margin-top: 2em;
 }
 footer{
-  /* display: block; */
+  
   margin: auto;
   margin-bottom: 2em;
   height: 8vh;
-  max-width: 80%;
+  max-width: 100%;
   background-color: rgb(58, 57, 57);
 }
 footer p{
@@ -148,16 +147,15 @@ footer p{
  color: azure;
  padding-top: 2em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   #intro{
+    background-image: url("https://images.unsplash.com/photo-1584378834085-0aa159117f9b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGNsZWFuaW5nJTIwc3VwcGx5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
     display: block;
-    clear: both;
     flex-direction: column;
     margin: 2em;
   }
   #intro-text{
     width: 70%;
-    clear: both;
     padding:3em 3em 2em 2em;
   }
   .desc1{
@@ -170,20 +168,18 @@ footer p{
   }
   #intro-form{
     display: block;
-    clear: both;
+    /* clear: both; */
     margin-top: 1em;
     width: 80%;
     ;
   }
   #qualities{
     display: block;
-    clear: both;
-    height: 20vh;
+    height: 15vh;
     flex-direction: column;
    
   }
   .desc2{
-    display: block;
     width: 80%;
     height: 7em;
     margin: 2em 5em;
@@ -202,15 +198,12 @@ footer p{
   }
   #clients{
     margin-top: 2em;
-    display: block;
-    clear: both;
-    width: 70%;
+    flex-direction: column;
     height: 120vh;
+    width: 80%;
    padding:1em 3em;
   }
   .client{
-    display: block;
-    clear: both;
     margin-top: 2em;
     width: 30%;
     
@@ -236,6 +229,9 @@ footer p{
     margin: 2em 0.025em;
     display: flex;
   }
-  
+  footer{
+    display: block;
+    width: 80%;
+  }
   
 }
