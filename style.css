@@ -46,6 +46,8 @@ body{
   background:rgba(0,0,0,0.4);
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
   float: left;
+  clear: both;
+    display: block;
   zoom: 1;
   width: 40%;
   margin:2em 3em;
@@ -147,12 +149,13 @@ footer p{
  color: azure;
  padding-top: 2em;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width:800px) {
   #intro{
     background-image: url("https://images.unsplash.com/photo-1584378834085-0aa159117f9b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGNsZWFuaW5nJTIwc3VwcGx5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
     display: block;
     flex-direction: column;
     margin: 2em;
+    height: 50vh;
   }
   #intro-text{
     width: 70%;
@@ -167,12 +170,12 @@ footer p{
     font-size: 30px;
   }
   #intro-form{
-    display: block;
-    /* clear: both; */
-    margin-top: 1em;
     width: 80%;
-    ;
-  }
+    margin:0 3em;
+    clear: both;
+    display: block;   
+   }
+
   #qualities{
     display: block;
     height: 15vh;
@@ -180,8 +183,10 @@ footer p{
    
   }
   .desc2{
+    clear: both;
+
     width: 80%;
-    height: 7em;
+    height: 8em;
     margin: 2em 5em;
    padding:1em 3em;
   }
@@ -197,9 +202,9 @@ footer p{
   font-weight: bolder;
   }
   #clients{
-    margin-top: 2em;
-    flex-direction: column;
-    height: 120vh;
+    margin-top: 1em;
+    /* flex-direction: column; */
+    /* height: 120vh; */
     width: 80%;
    padding:1em 3em;
   }
