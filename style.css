@@ -21,15 +21,19 @@ body{
   margin:0 auto 2em auto;
   background-image: url("https://images.unsplash.com/photo-1601160458000-2b11f9fa1a0e?ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
   background-size: cover;
-  height: 70vh;
-  width: 80%;
-  display: flex;
-  flex-direction: row;
+     width: 80%;
+     display: flex;
+   
+     justify-content: space-evenly;
+     align-items: center;
+     padding: 1rem;
 }
 
 #intro-text{
-  width: 50%;
-  padding:4em 4em;
+  margin: 3rem;
+  padding: 1rem;
+  width: 500px;
+  text-align: center;
 }
 
 .desc1{
@@ -45,11 +49,10 @@ body{
   background: transparent\9;
   background:rgba(0,0,0,0.4);
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
-  float: left;
-  clear: both;
-    display: block;
   zoom: 1;
   width: 40%;
+  padding: 1rem;
+  text-align: center;
   margin:2em 3em;
   
 }
@@ -78,24 +81,27 @@ button{
   border-radius: 5px;
 }
 #qualities{
-  margin:  auto;
-  height: 30vh;
-  width: 80%;
-  display: flex;
-  flex-direction: row;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
 }
 .desc2{
-  width: 10em;
-  height: 4em;
- float: left;
- clear: both;
- margin:0 auto 2em auto;
- padding:0 3em;
+ width: 15rem;
+ height: 14rem;
+ margin: 1rem;
+ padding: 1rem;
+ transition: all .5s ease;
 }
-.desc2 p{
-  width: 15em;
-  font-size: 11px;
- 
+.desc2 p{ 
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 .desc2 span{
@@ -104,19 +110,23 @@ font-weight: bolder;
 }
 #clients{
   background-color: rgb(226, 226, 226);
-  margin: auto;
-  height: 70vh;
   max-width: 80%;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin:  auto;
+  text-align: center;
 }
 .client{
-  margin: auto;
-  width: 30%;
+ width: 15rem;
+ height: 18rem;
+ margin: 1rem;
+ padding: 1rem;
+ transition: all .5s ease;
 }
 .client img{
   height: 15vh;
-  margin-left: 5em;
   border-radius: 50%;
 }
 .client p{
@@ -124,23 +134,27 @@ font-weight: bolder;
   font-style: italic;
   font-weight: bold;
   margin-top:1em ;
+  display: block;
+  
 }
 .client span{
   font-style: normal;
-  margin-left: 8em;
   font-size: 12px;
-  margin-bottom: 1em;
+  display: block;
+ 
 }
 .star{
-  margin-left: 5em;
-  margin-top: 2em;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 footer{
-  
   margin: auto;
   margin-bottom: 2em;
   height: 8vh;
-  max-width: 100%;
+  max-width: 80%;
   background-color: rgb(58, 57, 57);
 }
 footer p{
@@ -151,92 +165,10 @@ footer p{
 }
 @media screen and (max-width:800px) {
   #intro{
-    background-image: url("https://images.unsplash.com/photo-1584378834085-0aa159117f9b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGNsZWFuaW5nJTIwc3VwcGx5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
-    display: block;
-    flex-direction: column;
-    margin: 2em;
-    height: 50vh;
-  }
-  #intro-text{
-    width: 70%;
-    padding:3em 3em 2em 2em;
-  }
-  .desc1{
-    display: block;
-    font-size: 15px;
-   
-  }
-  .desc1 span{
-    font-size: 30px;
+    flex-wrap: wrap; 
   }
   #intro-form{
-    width: 80%;
-    margin:0 3em;
-    clear: both;
-    display: block;   
-   }
-
-  #qualities{
-    display: block;
-    height: 15vh;
-    flex-direction: column;
-   
+    width: 100%;
+    margin: 1em;
   }
-  .desc2{
-    clear: both;
-
-    width: 80%;
-    height: 8em;
-    margin: 2em 5em;
-   padding:1em 3em;
-  }
-  .desc2 p{
-    display: block;
-    width: 50%;
-    font-size: 12px;
-   
-  }
-  
-  .desc2 span{
-  font-size: 15px;
-  font-weight: bolder;
-  }
-  #clients{
-    margin-top: 1em;
-    /* flex-direction: column; */
-    /* height: 120vh; */
-    width: 80%;
-   padding:1em 3em;
-  }
-  .client{
-    margin-top: 2em;
-    width: 30%;
-    
-  }
-  .client img{
-    height: 15vh;
-    margin: auto;
-    border-radius: 50%;
-  }
-  .client p{
-    font-size: 12px;
-    font-style: italic;
-    font-weight: bold;
-    margin-top:1em ;
-  }
-  .client span{
-    font-style: normal;
-    margin: auto;
-    font-size: 12px;
-    margin-bottom: 1em;
-  }
-  .star{
-    margin: 2em 0.025em;
-    display: flex;
-  }
-  footer{
-    display: block;
-    width: 80%;
-  }
-  
 }
